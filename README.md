@@ -7,7 +7,7 @@ En este repositorio vamos a alojar todos los ficheros que vayamos desarrollando 
 
 - Visual Studio Code
 
-- Extesiones de Visual Studio Code: CSS Peek, Autoclose tags, Material Icon Theme, Spaniah Language Pack, Javascript ES6 Snippets, etc.
+- Extesiones de **Visual Studio Code**: CSS Peek, Autoclose tags, Material Icon Theme, Spaniah Language Pack, Javascript ES6 Snippets, etc.
 
 En el primer tema vamos a trabajar con Markdown, que es un lenguaje sencillo de marcado. Nos interesa conocer lo siguiente:
 
@@ -18,3 +18,5 @@ En el primer tema vamos a trabajar con Markdown, que es un lenguaje sencillo de 
 3. Cómo crear listas no numeradas y numeradas
 
 4. Establecer enlaces como [este](https://markdown.es/sintaxis-markdown/#links)
+
+*Un ejemplo de cursiva*
