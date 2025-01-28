@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Par o impar</title>
 </head>
 <body>
     <script>
@@ -22,18 +22,16 @@
             {
                 if (comprobador == 1)
                 {
-                    document.getElementById("parimpar").innerHTML = "El número introducido es impar."
+                    document.getElementById("parimpar").innerHTML = "El número introducido es impar.";
                 }
 
                 else
                 {
-                    document.getElementById("parimpar").innerHTML = "El número introducido es par."
+                    document.getElementById("parimpar").innerHTML = "El número introducido es par.";
                 }
 
                 
             }
-
-            document.querySelector("button").addEventListener("click", resultado)
 
         }
 
@@ -41,7 +39,7 @@
     <h1>Par o Impar</h1>
     <p>Introduce tu número:</p>
      <input type="text" id="numero">
-     <button>Comprobar número</button>
+     <button onclick="resultado()">Comprobar número</button>
      <h4 id="parimpar"></h4>
 </body>
 </html>
