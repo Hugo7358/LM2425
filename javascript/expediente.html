@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expediente</title>
+</head>
+<body>
+    <script>
+        function media()
+        {
+            var LM = parseInt(document.getElementById("LM").value)
+            var ISO = parseInt(document.getElementById("ISO").value)
+            var FH = parseInt(document.getElementById("FH").value)
+            var BD = parseInt(document.getElementById("BD").value)
+            var Redes = parseInt(document.getElementById("Redes").value)
+            var IPE = parseInt(document.getElementById("IPE").value)
+            var Digitalización = parseInt(document.getElementById("Digitalización").value)
+            var Sostenibilidad = parseInt(document.getElementById("Sostenibilidad").value)
+
+
+            if (isNaN(LM) || LM <= 0)
+            {
+                alert("La nota de Lenguaje de Marcas no es un número / no es un número válido, por favor, introduzca uno que sí lo sea")
+                return;
+            }
+
+            if (isNaN(ISO) || ISO <= 0)
+            {
+                alert("La nota de ISO no es un número / no es un número válido, por favor, introduzca uno que sí lo sea")
+                return;
+            }
+                    
+            if(isNaN(FH) || FH <= 0)
+            {     
+                alert("La nota de Fundamentos de Hardware no es un número / no es un número válido, por favor, introduzca uno que sí lo sea")
+                return;
+            }
+                        
+            if(isNaN(BD) || BD <=0)
+            {
+                alert("La nota de Base de Datos no es un número / no es un número válido, por favor, introduzca uno que sí lo sea")
+                return;
+            }
+                            
+            if(isNaN(Redes) || Redes <=0)
+            {
+                alert("La nota de Redes de Área Local no es un número / no es un número válido, por favor, introduzca uno que sí lo sea")
+                return;
+            }
+
+            if(isNaN(IPE) || IPE <=0)
+            {
+                alert("La nota de Itinerario Personal Para la Empleabilidad no es un número / no es un número válido, por favor, introduzca uno que sí lo sea")
+                return;
+            }
+
+            if(isNaN(Digitalización) || Digitalización <=0)
+            {
+                alert("La nota de Digitalización no es un número / no es un número válido, por favor, introduzca uno que sí lo sea")
+                return;
+            }                    
+                                        
+            if(isNaN(Sostenibilidad) || Sostenibilidad <=0)
+            {
+                alert("La nota de Sostenibilidad no es un número / no es un número válido, por favor, introduzca uno que sí lo sea")
+                return;    
+            }
+                               
+            
+            document.getElementById("resultado").innerHTML = "Tu media del curso es: " + (LM + ISO + FH + BD + Redes + IPE + Digitalización + Sostenibilidad) / 8
+
+        }
+
+
+
+
+    </script>
+
+    <h1>Aquí calcularemos la media de tu expediente académico de ASIR</h1>
+
+    <p>Dime tu nota de Lenguaje de Marcas</p>
+    <input type="text" id="LM">
+    <br>
+
+    <p>Dime tu nota de ISO</p>
+    <input type="text" id="ISO">
+    <br>
+
+    <p>Dime tu nota de Fundamentos de Hardware</p>
+    <input type="text" id="FH">
+    <br>
+
+    <p>Dime tu nota de Base de Datos</p>
+    <input type="text" id="BD">
+    <br>
+
+    <p>Dime tu nota de Redes de Área Local</p>
+    <input type="text" id="Redes">
+    <br>
+
+    <p>Dime tu nota de Itinerario Personal Para la Empleabilidad</p>
+    <input type="text" id="IPE">
+    <br>
+
+    <p>Dime tu nota de Digitalización</p>
+    <input type="text" id="Digitalización">
+    <br>
+
+    <p>Dime tu nota de Sostenibilidad</p>
+    <input type="text" id="Sostenibilidad">
+    <br>
+    <br>
+
+    <button onclick="media()">Calcular la Media</button>
+    <br>
+
+    <h4 id="resultado"></h4>
+
+</body>
+</html>
